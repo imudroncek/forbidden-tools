@@ -17,7 +17,8 @@ export default defineConfig({
       name: 'forbidden-tools',
       short_name: 'forbidden-tools',
       description: 'GM tools for Forbidden Lands TRPG',
-      theme_color: '#ffffff',
+      theme_color: '#1C6A73',
+      background_color: '#A9D1C1',
     },
 
     workbox: {
