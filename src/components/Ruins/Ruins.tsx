@@ -13,16 +13,35 @@ export function Ruins() {
 
     async function generateRuin() {
         setOverlay(true);
-        const D66rolls = [];
+        const D66rolls: number[] = [];
         for (let i = 0; i < 5; i++) {
             D66rolls.push(rollD66());
         }
-        const D6rolls = [];
+        const D6rolls: number[] = [];
         for (let i = 0; i < 3; i++) {
             D6rolls.push(rollD6());
         }
+        const ruins = await fetchRuinsFile();
+        ruins.array.forEach(section => {
+            console.log(section.description);
+            const roll = section.dice === "D66" ? D66rolls.pop() : D6rolls.pop();
+            section.data.array.forEach(data => {
+                if (data.roll.from <= roll && data.roll.to >= roll) {
+                    console.log(data.info);
+                }
+            });
+        });
+        console.log(ruins);
         await delay(5000);
         setOverlay(false);
+    }
+
+    async function fetchRuinsFile() {
+        const url = "https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/ruins.json";
+        const response = await fetch(url);
+        if (response.ok) {
+            return await response.json();
+        }
     }
 
     function rollD66() {

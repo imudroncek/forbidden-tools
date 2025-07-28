@@ -2,6 +2,7 @@
     {
         "id": 0,
         "description": "How has the ruin been uncovered.",
+        "dice": "D66",
         "data": [
             {
                 "roll": {
@@ -56,6 +57,7 @@
     {
         "id": 1,
         "description": "How long has the ruin been uncovered.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -102,6 +104,7 @@
     {
         "id": 2,
         "description": "Original purpose.",
+        "dice": "D66",
         "data": [
             {
                 "roll": {
@@ -172,6 +175,7 @@
     {
         "id": 3,
         "description": "Inhabitants of the ruin.",
+        "dice": "D66",
         "data": [
             {
                 "roll": {
@@ -325,7 +329,6 @@
                 "info": null,
                 "additionalRoll": {
                     "number": 2,
-                    "dice": "D66",
                     "id": 3
                 }
             },
@@ -337,7 +340,6 @@
                 "info": null,
                 "additionalRoll": {
                     "number": 3,
-                    "dice": "D66",
                     "id": 3
                 }
             }
@@ -346,6 +348,7 @@
     {
         "id": 4,
         "description": "Pecularities in the ruin.",
+        "dice": "D66",
         "data": [
             {
                 "roll": {
@@ -355,7 +358,6 @@
                 "info": "The floor is covered by corpses of fallen treasure hunters.",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D6",
                     "id": 10
                 }
             },
@@ -535,7 +537,6 @@
                 "info": "A terrible ritual involving human sacrifice has been performed in the ruins.",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D6",
                     "id": 11
                 }
             },
@@ -579,7 +580,6 @@
                 "info": "The walls are covered with symbols painted in animal blood. Who has painted them?",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D6",
                     "id": 12
                 }
             },
@@ -623,7 +623,6 @@
                 "info": "An injured monster has sought shelter and then died in the ruins.",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D6",
                     "id": 13
                 }
             },
@@ -635,7 +634,6 @@
                 "info": "Treasure hunters rummage through the ruins.",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D66",
                     "id": 4
                 }
             },
@@ -647,7 +645,6 @@
                 "info": null,
                 "additionalRoll": {
                     "number": 2,
-                    "dice": "D66",
                     "id": 4
                 }
             },
@@ -659,7 +656,6 @@
                 "info": null,
                 "additionalRoll": {
                     "number": 3,
-                    "dice": "D66",
                     "id": 4
                 }
             }
@@ -668,6 +664,7 @@
     {
         "id": 5,
         "description": "Size of the ruin.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -677,7 +674,6 @@
                 "info": "Small",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D6",
                     "id": 6
                 }
             },
@@ -689,7 +685,6 @@
                 "info": "Medium",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D6",
                     "id": 6
                 }
             },
@@ -701,7 +696,6 @@
                 "info": "Large",
                 "additionalRoll": {
                     "number": 1,
-                    "dice": "D6",
                     "id": 6
                 }
             }
@@ -710,6 +704,7 @@
     {
         "id": 6,
         "description": "Buildings of the ruin.",
+        "dice": "D66",
         "data": [
             {
                 "roll": {
@@ -828,6 +823,7 @@
     {
         "id": 7,
         "description": "Entrances to the building.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -874,6 +870,7 @@
     {
         "id": 8,
         "description": "Threats in the building.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -904,6 +901,7 @@
     {
         "id": 9,
         "description": "Trap in the building.",
+        "dice": "D66",
         "data": [
             {
                 "roll": {
@@ -985,7 +983,6 @@
                 "info": "Floor collapse - Fall D6 meters. At the bottom, there are D3 skeletons. - All",
                 "additionalRoll": {
                     "number": 2,
-                    "dice": "D6",
                     "id": 15
                 }
             },
@@ -997,7 +994,6 @@
                 "info": null,
                 "additionalRoll": {
                     "number": 2,
-                    "dice": "D66",
                     "id": 9
                 }
             }
@@ -1006,6 +1002,7 @@
     {
         "id": 10,
         "description": "Sub roll.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -1052,6 +1049,7 @@
     {
         "id": 11,
         "description": "Sub roll.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -1074,6 +1072,7 @@
     {
         "id": 12,
         "description": "Sub roll.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -1104,6 +1103,7 @@
     {
         "id": 13,
         "description": "Sub roll.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -1126,6 +1126,7 @@
     {
         "id": 14,
         "description": "Sub roll.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
@@ -1148,6 +1149,7 @@
     {
         "id": 15,
         "description": "Sub roll.",
+        "dice": "D6",
         "data": [
             {
                 "roll": {
