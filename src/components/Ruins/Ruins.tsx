@@ -13,21 +13,16 @@ export function Ruins() {
 
     async function generateRuin() {
         setOverlay(true);
-        const D66rolls: number[] = [];
-        for (let i = 0; i < 5; i++) {
-            D66rolls.push(rollD66());
-        }
-        const D6rolls: number[] = [];
-        for (let i = 0; i < 3; i++) {
-            D6rolls.push(rollD6());
-        }
         const ruins = await fetchRuinsFile();
-        ruins.array.forEach(section => {
+        ruins.forEach(section => {
             console.log(section.description);
-            const roll = section.dice === "D66" ? D66rolls.pop() : D6rolls.pop();
-            section.data.array.forEach(data => {
+            const roll = section.dice === "D66" ? rollD66() : rollD6();
+            section.data.forEach(data => {
                 if (data.roll.from <= roll && data.roll.to >= roll) {
                     console.log(data.info);
+                    if (data.additionalRoll !== null) {
+                        console.log("Sub roll required.");
+                    }
                 }
             });
         });
