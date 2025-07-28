@@ -1,6 +1,6 @@
 import { useLocation } from 'preact-iso'
 import { useState } from 'preact/hooks';
-import { MdConstruction, MdMenu, MdPublic } from 'react-icons/md'
+import { MdConstruction, MdMenu, MdPublic, MdCastle } from 'react-icons/md'
 
 import './Navigator.css'
 
@@ -19,6 +19,7 @@ export function Navigator() {
             <button class={"navigator-button"}>bk</button>
             <button class={"navigator-button"} onClick={() => location.route('/ft/links')}><MdPublic/></button>
             <button class={"navigator-button"} onClick={() => location.route('/ft/under-construction')}><MdConstruction/></button>
+            <button class={"navigator-button"} onClick={() => location.route('/ft/ruins')}><MdCastle/></button>
             <button class={"navigator-button"} onClick={() => navigatorClicked()}><MdMenu/></button>
         </div>
     )

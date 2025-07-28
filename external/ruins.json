@@ -1,0 +1,1170 @@
+[
+    {
+        "id": 0,
+        "description": "How has the ruin been uncovered.",
+        "data": [
+            {
+                "roll": {
+                    "from": 11,
+                    "to": 26
+                },
+                "info": "Snow covering the ruins has been blown away.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 34,
+                    "to": 46
+                },
+                "info": "The ice has shifted.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 51,
+                    "to": 53
+                },
+                "info": "Treasure hunters have excavated the ruin.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 54,
+                    "to": 56
+                },
+                "info": "Hot steam has risen from underground and opened a fissure.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 61,
+                    "to": 65
+                },
+                "info": "A monster has awakened in the ruin and broken out.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 66,
+                    "to": 66
+                },
+                "info": "A falling star has created a crater where the ruin lies.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "description": "How long has the ruin been uncovered.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 1
+                },
+                "info": "Since the curse fell.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 2,
+                    "to": 2
+                },
+                "info": "A couple of thousand years.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 3,
+                    "to": 3
+                },
+                "info": "A couple of hundred years.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 4,
+                    "to": 5
+                },
+                "info": "A few years.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 6,
+                    "to": 6
+                },
+                "info": "Just a couple of weeks.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "description": "Original purpose.",
+        "data": [
+            {
+                "roll": {
+                    "from": 11,
+                    "to": 16
+                },
+                "info": "Settlement",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 21,
+                    "to": 26
+                },
+                "info": "Trade",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 31,
+                    "to": 36
+                },
+                "info": "Outpost",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 41,
+                    "to": 46
+                },
+                "info": "Stronghold",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 51,
+                    "to": 53
+                },
+                "info": "Education",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 54,
+                    "to": 56
+                },
+                "info": "Temple",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 61,
+                    "to": 63
+                },
+                "info": "Lair of a Monster",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 64,
+                    "to": 66
+                },
+                "info": "Grave",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "description": "Inhabitants of the ruin.",
+        "data": [
+            {
+                "roll": {
+                    "from": 11,
+                    "to": 24
+                },
+                "info": "Uninhabited",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 25,
+                    "to": 26
+                },
+                "info": "Hunter",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 31,
+                    "to": 32
+                },
+                "info": "Hermit",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 33,
+                    "to": 34
+                },
+                "info": "Outlaws",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 35,
+                    "to": 36
+                },
+                "info": "Wolfkin",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 41,
+                    "to": 42
+                },
+                "info": "Peddler",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 43,
+                    "to": 44
+                },
+                "info": "Dwarves",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 45,
+                    "to": 46
+                },
+                "info": "Treasure Hunters",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 51,
+                    "to": 51
+                },
+                "info": "Ghouls",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 52,
+                    "to": 52
+                },
+                "info": "Abyss Worm",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 53,
+                    "to": 53
+                },
+                "info": "Nanuik",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 54,
+                    "to": 54
+                },
+                "info": "Misgrown",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 55,
+                    "to": 55
+                },
+                "info": "Awakened Winter Elf",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 56,
+                    "to": 56
+                },
+                "info": "Stone Ravens",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 61,
+                    "to": 61
+                },
+                "info": "Drakewyrm",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 62,
+                    "to": 62
+                },
+                "info": "Demon",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 63,
+                    "to": 63
+                },
+                "info": "Wendigo",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 64,
+                    "to": 64
+                },
+                "info": "Frost dragon",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 65,
+                    "to": 65
+                },
+                "info": null,
+                "additionalRoll": {
+                    "number": 2,
+                    "dice": "D66",
+                    "id": 3
+                }
+            },
+            {
+                "roll": {
+                    "from": 66,
+                    "to": 66
+                },
+                "info": null,
+                "additionalRoll": {
+                    "number": 3,
+                    "dice": "D66",
+                    "id": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "description": "Pecularities in the ruin.",
+        "data": [
+            {
+                "roll": {
+                    "from": 11,
+                    "to": 11
+                },
+                "info": "The floor is covered by corpses of fallen treasure hunters.",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D6",
+                    "id": 10
+                }
+            },
+            {
+                "roll": {
+                    "from": 12,
+                    "to": 12
+                },
+                "info": "Several broken treasure chests are found in the ruin.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 13,
+                    "to": 13
+                },
+                "info": "The walls of the ruin are intact. In some places even parts of the roof remain.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 14,
+                    "to": 14
+                },
+                "info": "A thick layer of black ash covers the floor or the ground in the ruin.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 15,
+                    "to": 15
+                },
+                "info": "The floor is made from stone polished to be as reflective as a mirror.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 16,
+                    "to": 16
+                },
+                "info": "The building stinks of decay.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 21,
+                    "to": 21
+                },
+                "info": "A beautiful stone basin contains ice-cold water that through lingering magic remains unfrozen.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 22,
+                    "to": 22
+                },
+                "info": "All buildings in the ruin are draped by a cold and damp mist.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 23,
+                    "to": 23
+                },
+                "info": "A gate to a hidden ICE CAVE lacking other entrances.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 24,
+                    "to": 24
+                },
+                "info": "The ruins are unstable and risk falling apart. The PCs must make a STEALTH roll to avoid triggering a collapse. A collapse inflicts an attack with six Base Dice and Weapon Damage 2 (blunt force) against all PCs.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 25,
+                    "to": 25
+                },
+                "info": "The floor is a mosaic that shows an alien night sky filled with stars. A LORE roll reveals that this might be what the night sky looked like several thousand years ago.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 26,
+                    "to": 26
+                },
+                "info": "The floor is covered in snow roses, unique to the Bitter Reach. The flower has sharp thorns and is very fragile. With a SURVIVAL roll, the PCs can gather D6 flowers that can be sold for 2D6 silver each.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 31,
+                    "to": 31
+                },
+                "info": "The PCs feel observed. Redrunners watch the ruins from afar. A SCOUTING roll detects them. If approached, the Redrunners leave.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 32,
+                    "to": 32
+                },
+                "info": "The walls are covered by a mosaic that shows the winter elves kneeling in front of immense, transparent worm creatures who live among the stars.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 33,
+                    "to": 33
+                },
+                "info": "An ice sculpture that depicts the PCs' latest feats. The effigy has been created by an Ice Giant who then wandered off.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 34,
+                    "to": 34
+                },
+                "info": "A crack in the floor leads down to an ICE CAVE.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 35,
+                    "to": 35
+                },
+                "info": "Skulls of various kin are stacked outside the ruin as a warning.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 36,
+                    "to": 36
+                },
+                "info": "An abandoned campfire still burns. There is no trace of the one who built it.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 41,
+                    "to": 41
+                },
+                "info": "The ruins have served as a camp for treasure hunters who have plundered as much as they can. They have left heaps of trash and broken vessels and tools.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 42,
+                    "to": 42
+                },
+                "info": "Each night the building and its former inhabitants reappear in ghostly form, acting out a completely normal day from before the curse.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 43,
+                    "to": 43
+                },
+                "info": "A pack of wolves have their den close to the ruins. The PCs can see their tracks and hear them howl. The wolves avoid the buildings but if the PCs are careless, they may attract their attention as they leave the ruins.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 44,
+                    "to": 44
+                },
+                "info": "Mystical symbols on the walls and the floor create a magical aura. All magic costs one less Willpower Point than normal (at least one).",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 45,
+                    "to": 45
+                },
+                "info": "A terrible ritual involving human sacrifice has been performed in the ruins.",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D6",
+                    "id": 11
+                }
+            },
+            {
+                "roll": {
+                    "from": 46,
+                    "to": 46
+                },
+                "info": "Lava bubbles up through fissures in the ground.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 51,
+                    "to": 51
+                },
+                "info": "A blizzard blows in over the ruins. The PCs must all roll against COLD (page 111 in the Player's Handbook). They must seek shelter until the storm has passed.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 52,
+                    "to": 52
+                },
+                "info": "Sometimes sounds from life before the curse are heard as whispers on the wind.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 53,
+                    "to": 53
+                },
+                "info": "At night, a single star lights the ruins. This mystical star can only be seen from this very spot. It is said that this was the star the winter elves came from thousands of years ago. All who rest here for a night receive a Willpower Point. If the PCs rest here a second night, they are haunted by visions of slithering worms and falling stars. Anyone who rests here a third night hears voices from the past that jabber forbidden knowledge. The victim suffers a fear attack with five Base Dice and receives a legend. Anyone who dares rest a fourth night or more in the ruins only receive a good night's sleep. This sequence of events resets each full moon.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 54,
+                    "to": 54
+                },
+                "info": "The walls are covered with symbols painted in animal blood. Who has painted them?",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D6",
+                    "id": 12
+                }
+            },
+            {
+                "roll": {
+                    "from": 55,
+                    "to": 55
+                },
+                "info": "D6 mummified winter elves lie where they fell as the curse razed their kingdom.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 56,
+                    "to": 56
+                },
+                "info": "Poisonous gas seeps through cracks in the floor from the underground. Anyone who remains in the building for longer than D6 turns suffers the effects of lethal poison, Potency 6.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 61,
+                    "to": 61
+                },
+                "info": "The walls are covered with black soot.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 62,
+                    "to": 62
+                },
+                "info": "A well containing pitch black water. These wells acted as the Winter King's way of communicating with his subjects and still some of this magical energy. If a PC peers into the water and makes an INSIGHT roll, they can sense the Winter King in his throne room. If the water is removed from the well, it loses its magical power.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 63,
+                    "to": 63
+                },
+                "info": "An injured monster has sought shelter and then died in the ruins.",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D6",
+                    "id": 13
+                }
+            },
+            {
+                "roll": {
+                    "from": 64,
+                    "to": 64
+                },
+                "info": "Treasure hunters rummage through the ruins.",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D66",
+                    "id": 4
+                }
+            },
+            {
+                "roll": {
+                    "from": 65,
+                    "to": 65
+                },
+                "info": null,
+                "additionalRoll": {
+                    "number": 2,
+                    "dice": "D66",
+                    "id": 4
+                }
+            },
+            {
+                "roll": {
+                    "from": 66,
+                    "to": 66
+                },
+                "info": null,
+                "additionalRoll": {
+                    "number": 3,
+                    "dice": "D66",
+                    "id": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "description": "Size of the ruin.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 2
+                },
+                "info": "Small",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D6",
+                    "id": 6
+                }
+            },
+            {
+                "roll": {
+                    "from": 3,
+                    "to": 5
+                },
+                "info": "Medium",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D6",
+                    "id": 6
+                }
+            },
+            {
+                "roll": {
+                    "from": 6,
+                    "to": 6
+                },
+                "info": "Large",
+                "additionalRoll": {
+                    "number": 1,
+                    "dice": "D6",
+                    "id": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "description": "Buildings of the ruin.",
+        "data": [
+            {
+                "roll": {
+                    "from": 11,
+                    "to": 13
+                },
+                "info": "Dwelling - Roll a D6 to determine who lived here. 1: slaves, 2-3: commoners, 4: priests, 5: nobility, 6: warriors. Chance of a find: 6+. Roll once on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 14,
+                    "to": 16
+                },
+                "info": "Prison - The winter elves were a cruel people who enslaved and oppressed others. Their prisons were often filled to the brim. Chance of a find: 6+. Roll once on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 21,
+                    "to": 23
+                },
+                "info": "Forge - The winter elves forged exquisite weapons and armor. In the forges, their master blacksmiths used slaves to perform the toughest jobs. Chance of a find: 5+. Roll 1D3 times on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 24,
+                    "to": 26
+                },
+                "info": "Store - The winter elves' stores sold wares from all around the kingdom and elsewhere. The stalls that the winter elves themselves frequented only held luxury goods. They left the purchasing of trade goods to their slaves. Roll a D6. 1-4: trade goods, 5-6: luxury goods. Chance of a find: 3+. For trade goods, roll D3 times on the table for SIMPLE FINDS IN THE LAIR. For luxury goods, roll D3 times on the table for VALUABLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 31,
+                    "to": 33
+                },
+                "info": "Artisans - The artisans among the winter elves created only beautiful and valuable items. In this building the artisan may have been a tailor, a silversmith, a mason or a painter. Chance of a find: 3+. Roll once on the table for VALUABLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 34,
+                    "to": 36
+                },
+                "info": "Scholars - The pursuit of knowledge was central to the society of the winter elves. Superior knowledge created superior soldiers. Roll a D6. 1-2: library, 3-4: observatory, 5-6: alchemist's laboratory. Chance of a find: 4+. Roll once on the table for SIMPLE FINDS IN THE LAIR and once on the table for VALUABLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 41,
+                    "to": 43
+                },
+                "info": "Tavern - Taverns were either simple mess halls for the slaves, or luxurious feast halls for the winter elves, where fine wines and exquisite food were served. Chance of a find: 5+. Roll twice on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 44,
+                    "to": 46
+                },
+                "info": "Barracks - The soldiers of the winter elves were stationed across the kingdom. It was common to see patrolling warriors both in the cities and in the wilds outside. Chance of a find: 5+. Roll twice on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 51,
+                    "to": 53
+                },
+                "info": "Watchtower - Placed in the outskirts of the cities and villages of the winter elves. They were often ten stories tall or more. Chance of a find: 6+. Roll once on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 54,
+                    "to": 56
+                },
+                "info": "Arena - The winter elves derived great pleasure from visiting the arenas and watching slaves, captured enemies and great monsters fight to the death. Chance of a find: 6+. Roll once on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 61,
+                    "to": 62
+                },
+                "info": "Stable or Boathouse - If the ruin is situated inland, it was a stable where the winter elves bred their warhorses. If the ruin is by the coast or a river, it was a port where the warships of the winter elves were stationed. Chance of a find: 5+. Roll twice on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 63,
+                    "to": 64
+                },
+                "info": "Sorcerer's Tower - These were the most mystical buildings of the winter elves. The walls were decorated with magical symbols to bind the powerful energy that was used for experiments and for mystical rituals. When the curse fell much of this magical energy was dispersed and only the ruined tower remains. Chance of a find: 3+. Roll once on the table for SIMPLE FINDS IN THE LAIR and once on the table for VALUABLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 65,
+                    "to": 65
+                },
+                "info": "Temple - The temples of the winter elves are adorned with stone statues, reliefs and images of their gods in many forms: immense worm creatures, humanoid creatures made up of worms, humanoids with worm heads or hands. They trample the infidels of various kin beneath their feet and spread death and destruction. Chance of a find: 5+. Roll twice on the table for VALUABLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 66,
+                    "to": 66
+                },
+                "info": "Treasury - All the taxes in the kingdom were gathered and stored in treasuries under heavy guard. The treasuries were emptied when they were full, and the riches were transported to the Palace of the Winter King. Many of these were empty when the curse fell, but not all… Chance of a find: 3+. Roll D3 times on the table for VALUABLE FINDS IN THE LAIR.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "description": "Entrances to the building.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 2
+                },
+                "info": "One",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 3,
+                    "to": 3
+                },
+                "info": "Two",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 4,
+                    "to": 4
+                },
+                "info": "Three",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 5
+                },
+                "info": "Four",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 6,
+                    "to": 6
+                },
+                "info": "None",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "description": "Threats in the building.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 2
+                },
+                "info": "None - Chance of Find (D6) 5+",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 3,
+                    "to": 4
+                },
+                "info": "Creature - Chance of Find (D6) 4+ - See inhabitants",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 6
+                },
+                "info": "Trap - Chance of Find (D6) 3+ - See traps",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "description": "Trap in the building.",
+        "data": [
+            {
+                "roll": {
+                    "from": 11,
+                    "to": 16
+                },
+                "info": "Falling Door - Attack with five Base Dice, Weapon Damage 1 (blunt force). - First PC",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 21,
+                    "to": 23
+                },
+                "info": "Swinging hammer - Attack with six Base Dice, Weapon Damage 2 (blunt force). - First two PCs",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 24,
+                    "to": 26
+                },
+                "info": "Fungal spores - Hallucinogenic poison with Potency 6. - All",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 31,
+                    "to": 33
+                },
+                "info": "Visions of the elven civil war - Fear attack with six Base Dice. Anyone who suffers damage sees a vision of the Winter King on his throne. - All",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 34,
+                    "to": 36
+                },
+                "info": "Rolling boulder - Each PC must roll for Move to avoid, or suffer attack with eight Base Dice, Weapon Damage 1 (blunt force). - All",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 41,
+                    "to": 43
+                },
+                "info": "Poison arrows - Attack with seven Base Dice, Weapon Damage 1 (stab wound). Anyone hurt also suffers the effects of a lethal poison, Potency 6. - All",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 44,
+                    "to": 46
+                },
+                "info": "Spears from the walls - Attack with eight Base Dice, Weapon Damage 3 (stab wound). - All",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 51,
+                    "to": 53
+                },
+                "info": "Blades sweeping from the walls - Attack with seven Base Dice, Weapon Damage 2 (slash wound). - All",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 54,
+                    "to": 56
+                },
+                "info": "Skeletons attack - Undead from the elven civil war break free and attack. For attributes, see page 122 in the Gamemaster's Guide. - All",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 61,
+                    "to": 65
+                },
+                "info": "Floor collapse - Fall D6 meters. At the bottom, there are D3 skeletons. - All",
+                "additionalRoll": {
+                    "number": 2,
+                    "dice": "D6",
+                    "id": 15
+                }
+            },
+            {
+                "roll": {
+                    "from": 66,
+                    "to": 66
+                },
+                "info": null,
+                "additionalRoll": {
+                    "number": 2,
+                    "dice": "D66",
+                    "id": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "description": "Sub roll.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 2
+                },
+                "info": "They have died fighting each other.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 3,
+                    "to": 3
+                },
+                "info": "They have been slain by orcs.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 4,
+                    "to": 4
+                },
+                "info": "Wolfkin have killed them.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 5
+                },
+                "info": "Misgrown have ambushed them.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 6,
+                    "to": 6
+                },
+                "info": "They have been slain by a monster.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "description": "Sub roll.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 4
+                },
+                "info": "Hundreds of years ago.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 6
+                },
+                "info": "Very recently.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "description": "Sub roll.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 2
+                },
+                "info": "Orcs",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 3,
+                    "to": 4
+                },
+                "info": "Wolfkin",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 6
+                },
+                "info": "Misgrown",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "description": "Sub roll.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 5
+                },
+                "info": "Only the skeleton remains.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 6,
+                    "to": 6
+                },
+                "info": "The body is intact, it happened not long ago.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "description": "Sub roll.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 4
+                },
+                "info": "Hostile, will attack as soon as they get the chance.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 6
+                },
+                "info": "Cautious but friendly.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "description": "Sub roll.",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 3
+                },
+                "info": "The skeletons are dead.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 4,
+                    "to": 6
+                },
+                "info": "They are undead.",
+                "additionalRoll": null
+            }
+        ]
+    }
+]

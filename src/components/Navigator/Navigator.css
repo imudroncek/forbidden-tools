@@ -2,17 +2,17 @@
     background-color: #FEDC97;
     color: #282828;
     width: 100px;
-    height: 200px;
+    height: 250px;
     position: absolute;
     left: -50px;
-    top: -150px;
+    top: -200px;
     border-radius: 0px 0px 5px 0px;
     box-shadow: 2px 2px 10px 1px;
     z-index: 10;
 }
 
 .navigator-extended {
-    top: -150px;
+    top: -200px;
     animation: navigatorExtend 1s;
     animation-fill-mode: forwards;
 }
@@ -28,7 +28,7 @@
         transform: none;
     }
     to {
-        transform: translate(0px, 100px);
+        transform: translate(0px, 150px);
     }
 }
 
@@ -37,7 +37,7 @@
         transform: none;
     }
     to {
-        transform: translate(0px, -100px);
+        transform: translate(0px, -150px);
     }
 }
 
