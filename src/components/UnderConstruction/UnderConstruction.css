@@ -1,3 +1,24 @@
-.body {
-    
+.construction {
+    background-color: hsla(0, 0%, 16%, 0.533);
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.text {
+    color: white;
+    width: fit-content;
+    justify-self: center;
+}
+
+.text h1 {
+    font-size: 6em;
+    margin: 0px 0px 0px 0px;
+}
+
+.text p {
+    margin: 0px 0px 0px 0px;
+    line-height: 2em;
+    font-size: 1.5em;
+    text-align: center;
 }

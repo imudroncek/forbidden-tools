@@ -1,4 +1,5 @@
 import { LocationProvider, ErrorBoundary, Router, Route } from 'preact-iso';
+import { Home } from './components/Home/Home'; 
 import { UnderConstruction } from './components/UnderConstruction/UnderConstruction';
 import { Links } from './components/Links/Links';
 import { Navigator } from './components/Navigator/Navigator';
@@ -11,8 +12,9 @@ export function App() {
       <Navigator />
         <ErrorBoundary>
           <Router>
-            <Route path="/" component={UnderConstruction} />
-            <Route path='/links' component={Links} />
+            <Route path='/ft/' component={Home} />
+            <Route path='/ft/under-construction' component={UnderConstruction} />
+            <Route path='/ft/links' component={Links} />
           </Router>
         </ErrorBoundary>
       </LocationProvider> 

@@ -1,0 +1,32 @@
+.home {
+    background-color: hsla(0, 0%, 16%, 0.533);
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    animation: backgroundOpacity 15s infinite;
+}
+
+@keyframes backgroundOpacity {
+    0% {
+        background-color: hsla(0, 0%, 16%, 0.9);
+    }
+    50% {
+        background-color: hsla(0, 0%, 16%, 0.5);
+    }
+    100% {
+        background-color: hsla(0, 0%, 16%, 0.9);
+    }
+}
+
+.title {
+    color: white;
+    width: fit-content;
+    justify-self: center;
+}
+
+.title p {
+    margin: 0px 0px 0px 0px;
+    line-height: 0.8em;
+    font-size: 4em;
+    text-align: start;
+}

@@ -17,8 +17,8 @@ export function Navigator() {
     return (
         <div class={style}>
             <button class={"navigator-button"}>bk</button>
-            <button class={"navigator-button"} onClick={() => location.route('/links')}><MdPublic/></button>
-            <button class={"navigator-button"} onClick={() => location.route('/')}><MdConstruction/></button>
+            <button class={"navigator-button"} onClick={() => location.route('/ft/links')}><MdPublic/></button>
+            <button class={"navigator-button"} onClick={() => location.route('/ft/under-construction')}><MdConstruction/></button>
             <button class={"navigator-button"} onClick={() => navigatorClicked()}><MdMenu/></button>
         </div>
     )
