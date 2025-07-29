@@ -1,6 +1,7 @@
 [
     {
         "id": 0,
+        "type": "MAIN",
         "description": "How has the ruin been uncovered.",
         "dice": "D66",
         "data": [
@@ -56,6 +57,7 @@
     },
     {
         "id": 1,
+        "type": "MAIN",
         "description": "How long has the ruin been uncovered.",
         "dice": "D6",
         "data": [
@@ -103,6 +105,7 @@
     },
     {
         "id": 2,
+        "type": "MAIN",
         "description": "Original purpose.",
         "dice": "D66",
         "data": [
@@ -174,6 +177,7 @@
     },
     {
         "id": 3,
+        "type": "SUB",
         "description": "Inhabitants of the ruin.",
         "dice": "D66",
         "data": [
@@ -347,6 +351,7 @@
     },
     {
         "id": 4,
+        "type": "MAIN",
         "description": "Pecularities in the ruin.",
         "dice": "D66",
         "data": [
@@ -663,6 +668,7 @@
     },
     {
         "id": 5,
+        "type": "MAIN",
         "description": "Size of the ruin.",
         "dice": "D6",
         "data": [
@@ -703,6 +709,7 @@
     },
     {
         "id": 6,
+        "type": "SUB",
         "description": "Buildings of the ruin.",
         "dice": "D66",
         "data": [
@@ -822,6 +829,7 @@
     },
     {
         "id": 7,
+        "type": "MAIN",
         "description": "Entrances to the building.",
         "dice": "D6",
         "data": [
@@ -869,6 +877,7 @@
     },
     {
         "id": 8,
+        "type": "MAIN",
         "description": "Threats in the building.",
         "dice": "D6",
         "data": [
@@ -900,6 +909,7 @@
     },
     {
         "id": 9,
+        "type": "SUB",
         "description": "Trap in the building.",
         "dice": "D66",
         "data": [
@@ -1001,7 +1011,8 @@
     },
     {
         "id": 10,
-        "description": "Sub roll.",
+        "type": "SUB",
+        "description": null,
         "dice": "D6",
         "data": [
             {
@@ -1048,7 +1059,8 @@
     },
     {
         "id": 11,
-        "description": "Sub roll.",
+        "type": "SUB",
+        "description": null,
         "dice": "D6",
         "data": [
             {
@@ -1071,7 +1083,8 @@
     },
     {
         "id": 12,
-        "description": "Sub roll.",
+        "type": "SUB",
+        "description": null,
         "dice": "D6",
         "data": [
             {
@@ -1102,7 +1115,8 @@
     },
     {
         "id": 13,
-        "description": "Sub roll.",
+        "type": "SUB",
+        "description": null,
         "dice": "D6",
         "data": [
             {
@@ -1125,7 +1139,8 @@
     },
     {
         "id": 14,
-        "description": "Sub roll.",
+        "type": "SUB",
+        "description": null,
         "dice": "D6",
         "data": [
             {
@@ -1148,7 +1163,8 @@
     },
     {
         "id": 15,
-        "description": "Sub roll.",
+        "type": "SUB",
+        "description": null,
         "dice": "D6",
         "data": [
             {
