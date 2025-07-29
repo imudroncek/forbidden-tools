@@ -1,6 +1,6 @@
 import './Ruins.css'
 
-import { MdCastle } from 'react-icons/md'
+import { MdCastle, MdClear, MdReplay } from 'react-icons/md'
 import { ProgressOverlay } from '../ProgressOverlay/ProgressOverlay';
 import { Component } from 'preact';
 
@@ -111,16 +111,18 @@ export class Ruins extends Component<Props, State> {
                     title: section.description === null ? "" : section.description,
                     detail: ""
                 }
-                const roll = this.roll(section.dice);
+                const roll = this.roll(1, section.dice);
                 section.data.forEach((data: RuinsData) => {
                     if (data.roll.from <= roll && data.roll.to >= roll) {
                         result.detail = data.info === null ? "" : data.info;
                         if (data.additionalRoll !== null) {
-                            console.log("Sub roll required.");
+                            this.processSubRoll(result, {
+                                id: data.additionalRoll.id,
+                                number: data.additionalRoll.id === 6 ? this.getNumberOfBuildings(data.additionalRoll.number) : data.additionalRoll.number
+                            });
                         }
                     }
                 });
-                console.log(result);
                 results.push(result);
             } else if (section.type === ROLL_TYPE.SUB) {
                 console.debug("Skipping sub roll.");
@@ -131,6 +133,29 @@ export class Ruins extends Component<Props, State> {
         this.setState({result: results});
     }
 
+    private getNumberOfBuildings(number: number) {
+        return this.roll(number, DICE_TYPE.D6);
+    }
+
+    private processSubRoll(result: RuinsResult, additionalRoll: AdditionalRoll) {
+        this.state.ruins.forEach(section => {
+            if (section.id === additionalRoll.id) {
+                for (let i = 0; i < additionalRoll.number; i++) {
+                    const roll = this.roll(1, section.dice);
+                    section.data.forEach((data: RuinsData) => {
+                        if (data.roll.from <= roll && data.roll.to >= roll) {
+                            result.detail += " - ";
+                            result.detail += data.info === null ? "" : data.info;
+                            if (data.additionalRoll !== null) {
+                                this.processSubRoll(result, data.additionalRoll);
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+
     async fetchRuinsFile() {
         const url = "https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/ruins.json";
         const response = await fetch(url);
@@ -139,14 +164,18 @@ export class Ruins extends Component<Props, State> {
         }
     }
 
-    private roll(dice: string) {
-        if (dice === DICE_TYPE.D66) {
-            return this.rollD66();
-        } else if (dice === DICE_TYPE.D6) {
-            return this.rollD6();
-        } else {
-            throw(`Unexpected dice type [${dice}].`);
+    private roll(number: number, dice: string) {
+        let count = 0;
+        for (let i = 0; i < number; i++) {
+            if (dice === DICE_TYPE.D66) {
+                count += this.rollD66();
+            } else if (dice === DICE_TYPE.D6) {
+                count += this.rollD6();
+            } else {
+                throw(`Unexpected dice type [${dice}].`);
+            }
         }
+        return count;
     }
 
     private rollD66() {
@@ -163,10 +192,46 @@ export class Ruins extends Component<Props, State> {
         return (
             <div class={"ruins bellefair-regular"}>
                 <ProgressOverlay visible={this.state.overlay} />
-                <div class={"text"}>
+                <div hidden={this.state.result.length > 0} class={"text"}>
                     <h1><MdCastle/></h1>
-                    <button onClick={() => this.generateRuin()}>Generate Ruin</button>
-                    <p>Generate Ruin</p>
+                    <button class={"generate-button bellefair-regular"} onClick={() => this.generateRuin()}>Generate Ruin</button>
+                </div>
+                <div hidden={this.state.result.length === 0 || this.state.overlay} class={"scrollable"}>
+                    <div hidden={this.state.overlay} class={"toolbar"}>
+                        <button class={"toolbar-button"} onClick={() => this.setState({result: []})}><MdClear/></button>
+                        <button class={"toolbar-button"} onClick={() => this.generateRuin()}><MdReplay/></button>
+                        <button class={"toolbar-button"}>bk</button>
+                    </div>
+                    <div class={"spacer"} />
+                    <div class={"result"}>
+                        <h3>{this.state.result[0]?.title}</h3>
+                        <p>{this.state.result[0]?.detail}</p>
+                    </div>
+                    <div class={"result"}>
+                        <h3>{this.state.result[1]?.title}</h3>
+                        <p>{this.state.result[1]?.detail}</p>
+                    </div>
+                    <div class={"result"}>
+                        <h3>{this.state.result[2]?.title}</h3>
+                        <p>{this.state.result[2]?.detail}</p>
+                    </div>
+                    <div class={"result"}>
+                        <h3>{this.state.result[3]?.title}</h3>
+                        <p>{this.state.result[3]?.detail}</p>
+                    </div>
+                    <div class={"result"}>
+                        <h3>{this.state.result[4]?.title}</h3>
+                        <p>{this.state.result[4]?.detail}</p>
+                    </div>
+                    <div class={"result"}>
+                        <h3>{this.state.result[5]?.title}</h3>
+                        <p>{this.state.result[5]?.detail}</p>
+                    </div>
+                    <div class={"result"}>
+                        <h3>{this.state.result[6]?.title}</h3>
+                        <p>{this.state.result[6]?.detail}</p>
+                    </div>
+                    <div class={"spacer"} />
                 </div>
             </div>
         );

@@ -690,7 +690,7 @@
                 },
                 "info": "Medium",
                 "additionalRoll": {
-                    "number": 1,
+                    "number": 2,
                     "id": 6
                 }
             },
@@ -701,7 +701,7 @@
                 },
                 "info": "Large",
                 "additionalRoll": {
-                    "number": 1,
+                    "number": 4,
                     "id": 6
                 }
             }
@@ -718,8 +718,11 @@
                     "from": 11,
                     "to": 13
                 },
-                "info": "Dwelling - Roll a D6 to determine who lived here. 1: slaves, 2-3: commoners, 4: priests, 5: nobility, 6: warriors. Chance of a find: 6+. Roll once on the table for SIMPLE FINDS IN THE LAIR.",
-                "additionalRoll": null
+                "info": "Dwelling - Chance of a find: 6+. Roll once on the table for SIMPLE FINDS IN THE LAIR.",
+                "additionalRoll": {
+                    "id": 16,
+                    "number": 1
+                }
             },
             {
                 "roll": {
@@ -742,8 +745,11 @@
                     "from": 24,
                     "to": 26
                 },
-                "info": "Store - The winter elves' stores sold wares from all around the kingdom and elsewhere. The stalls that the winter elves themselves frequented only held luxury goods. They left the purchasing of trade goods to their slaves. Roll a D6. 1-4: trade goods, 5-6: luxury goods. Chance of a find: 3+. For trade goods, roll D3 times on the table for SIMPLE FINDS IN THE LAIR. For luxury goods, roll D3 times on the table for VALUABLE FINDS IN THE LAIR.",
-                "additionalRoll": null
+                "info": "Store - The winter elves' stores sold wares from all around the kingdom and elsewhere. The stalls that the winter elves themselves frequented only held luxury goods. They left the purchasing of trade goods to their slaves. Chance of a find: 3+. For trade goods, roll D3 times on the table for SIMPLE FINDS IN THE LAIR. For luxury goods, roll D3 times on the table for VALUABLE FINDS IN THE LAIR.",
+                "additionalRoll": {
+                    "id": 17,
+                    "number": 1
+                }
             },
             {
                 "roll": {
@@ -895,7 +901,10 @@
                     "to": 4
                 },
                 "info": "Creature - Chance of Find (D6) 4+ - See inhabitants",
-                "additionalRoll": null
+                "additionalRoll": {
+                    "id": 3,
+                    "number": 1
+                }
             },
             {
                 "roll": {
@@ -903,7 +912,10 @@
                     "to": 6
                 },
                 "info": "Trap - Chance of Find (D6) 3+ - See traps",
-                "additionalRoll": null
+                "additionalRoll": {
+                    "id": 9,
+                    "number": 1
+                }
             }
         ]
     },
@@ -1181,6 +1193,78 @@
                     "to": 6
                 },
                 "info": "They are undead.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "type": "SUB",
+        "description": "Who lived here",
+        "dice": "D6",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 1
+                },
+                "info": "Slaves.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 2,
+                    "to": 3
+                },
+                "info": "Commoners.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 4,
+                    "to": 4
+                },
+                "info": "Priests.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 5
+                },
+                "info": "Nobility.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 6,
+                    "to": 6
+                },
+                "info": "Warriors.",
+                "additionalRoll": null
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "type": "SUB",
+        "description": null,
+        "dice": "D6",
+        "data": [
+            {
+                "roll": {
+                    "from": 1,
+                    "to": 4
+                },
+                "info": "Trade goods.",
+                "additionalRoll": null
+            },
+            {
+                "roll": {
+                    "from": 5,
+                    "to": 6
+                },
+                "info": "Luxury goods.",
                 "additionalRoll": null
             }
         ]

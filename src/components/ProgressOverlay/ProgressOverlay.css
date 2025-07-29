@@ -4,6 +4,8 @@
     height: 100%;
     align-content: center;
     animation: backgroundOpacity 3s infinite;
+    z-index: 8;
+    overflow: hidden;
 }
 
 @keyframes backgroundOpacity {

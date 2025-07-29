@@ -30,6 +30,7 @@
 
 html {
   overscroll-behavior: none;
+  overflow: hidden;
 }
 
 body {
