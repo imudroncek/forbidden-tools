@@ -38,7 +38,7 @@ type RuinsSection = {
 
 type RuinsResult = {
     title: string;
-    detail: string | undefined;
+    detail: string[];
 }
 
 interface Props {}
@@ -109,12 +109,14 @@ export class Ruins extends Component<Props, State> {
             if (section.type === ROLL_TYPE.MAIN) {
                 let result: RuinsResult = {
                     title: section.description === null ? "" : section.description,
-                    detail: ""
+                    detail: []
                 }
                 const roll = this.roll(1, section.dice);
                 section.data.forEach((data: RuinsData) => {
                     if (data.roll.from <= roll && data.roll.to >= roll) {
-                        result.detail = data.info === null ? "" : data.info;
+                        if (data.info !== null) {
+                            result.detail.push(data.info);
+                        }
                         if (data.additionalRoll !== null) {
                             this.processSubRoll(result, {
                                 id: data.additionalRoll.id,
@@ -144,8 +146,9 @@ export class Ruins extends Component<Props, State> {
                     const roll = this.roll(1, section.dice);
                     section.data.forEach((data: RuinsData) => {
                         if (data.roll.from <= roll && data.roll.to >= roll) {
-                            result.detail += " - ";
-                            result.detail += data.info === null ? "" : data.info;
+                            if (data.info !== null) {
+                                result.detail.push(data.info);
+                            }
                             if (data.additionalRoll !== null) {
                                 this.processSubRoll(result, data.additionalRoll);
                             }
@@ -188,6 +191,17 @@ export class Ruins extends Component<Props, State> {
         return Math.floor(Math.random() * 6) + 1;
     }
 
+    private getDetail(result: RuinsResult) {
+        let out = [<h3>{result?.title}</h3>];
+        result?.detail.forEach(detail => {
+            out.push(
+                <p>{detail}</p>
+            );
+        });
+        out.push(<div class={"small-spacer"}></div>);
+        return out;
+    }
+
     render() {
         return (
             <div class={"ruins bellefair-regular"}>
@@ -202,34 +216,27 @@ export class Ruins extends Component<Props, State> {
                         <button class={"toolbar-button"} onClick={() => this.generateRuin()}><MdReplay/></button>
                         <button class={"toolbar-button"}>bk</button>
                     </div>
-                    <div class={"spacer"} />
+                    <div class={"large-spacer"} />
                     <div class={"result"}>
-                        <h3>{this.state.result[0]?.title}</h3>
-                        <p>{this.state.result[0]?.detail}</p>
+                        {this.getDetail(this.state.result[0])}
                     </div>
                     <div class={"result"}>
-                        <h3>{this.state.result[1]?.title}</h3>
-                        <p>{this.state.result[1]?.detail}</p>
+                        {this.getDetail(this.state.result[1])}
                     </div>
                     <div class={"result"}>
-                        <h3>{this.state.result[2]?.title}</h3>
-                        <p>{this.state.result[2]?.detail}</p>
+                        {this.getDetail(this.state.result[2])}
                     </div>
                     <div class={"result"}>
-                        <h3>{this.state.result[3]?.title}</h3>
-                        <p>{this.state.result[3]?.detail}</p>
+                        {this.getDetail(this.state.result[3])}
                     </div>
                     <div class={"result"}>
-                        <h3>{this.state.result[4]?.title}</h3>
-                        <p>{this.state.result[4]?.detail}</p>
+                        {this.getDetail(this.state.result[4])}
                     </div>
                     <div class={"result"}>
-                        <h3>{this.state.result[5]?.title}</h3>
-                        <p>{this.state.result[5]?.detail}</p>
+                        {this.getDetail(this.state.result[5])}
                     </div>
                     <div class={"result"}>
-                        <h3>{this.state.result[6]?.title}</h3>
-                        <p>{this.state.result[6]?.detail}</p>
+                        {this.getDetail(this.state.result[6])}
                     </div>
                     <div class={"spacer"} />
                 </div>
