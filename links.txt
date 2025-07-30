@@ -2,5 +2,5 @@ main image - https://freeleaguepublishing.com/wp-content/uploads/2023/09/Forbidd
 theme color - #1C6A73
 background color - #A9D1C1
 terciary color - #FEDC97
-main font - https://freeleaguepublishing.com/wp-content/themes/fria-ligan/assets/font/EksellDisplay-Small.woff2
+main font - https://fonts.google.com/specimen/Rakkas
 text font - https://fonts.google.com/specimen/Bellefair
