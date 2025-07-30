@@ -238,7 +238,7 @@ export class Ruins extends Component<Props, State> {
                     <div class={"result"}>
                         {this.getDetail(this.state.result[6])}
                     </div>
-                    <div class={"spacer"} />
+                    <div class={"large-spacer"} />
                 </div>
             </div>
         );
