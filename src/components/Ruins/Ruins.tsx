@@ -117,15 +117,20 @@ export class Ruins extends Component<Props, State> {
                         if (data.info !== null) {
                             result.detail.push(data.info);
                         }
-                        if (data.additionalRoll !== null) {
+                        if (data.additionalRoll !== null && section.id !== 5) {
                             this.processSubRoll(result, {
                                 id: data.additionalRoll.id,
-                                number: data.additionalRoll.id === 6 ? this.getNumberOfBuildings(data.additionalRoll.number) : data.additionalRoll.number
-                            });
+                                number: data.additionalRoll.number
+                            }, false);
+                        } else if (section.id === 5) {
+                            results.push(result);
+                            this.processBuildings(data, results);
                         }
                     }
                 });
-                results.push(result);
+                if (section.id !== 5) {
+                    results.push(result);
+                }
             } else if (section.type === ROLL_TYPE.SUB) {
                 console.debug("Skipping sub roll.");
             } else {
@@ -135,11 +140,28 @@ export class Ruins extends Component<Props, State> {
         this.setState({result: results});
     }
 
+    private processBuildings(data: RuinsData, results: RuinsResult[]) {
+        if (data.additionalRoll !== null) {
+            const numberOfBuildings = this.getNumberOfBuildings(data.additionalRoll.number);
+            for (let i = 0; i < numberOfBuildings; i++) {
+                let result: RuinsResult = {
+                    title: `Building ${i + 1}`,
+                    detail: []
+                }
+                this.processSubRoll(result, {number: 1, id: 6}, false);
+                this.processSubRoll(result, {number: 1, id: 7}, true);
+                this.processSubRoll(result, {number: 1, id: 8}, true);
+                results.push(result);
+            }
+            console.log(results);
+        }
+    }
+
     private getNumberOfBuildings(number: number) {
         return this.roll(number, DICE_TYPE.D6);
     }
 
-    private processSubRoll(result: RuinsResult, additionalRoll: AdditionalRoll) {
+    private processSubRoll(result: RuinsResult, additionalRoll: AdditionalRoll, addDescriptions: boolean) {
         this.state.ruins.forEach(section => {
             if (section.id === additionalRoll.id) {
                 for (let i = 0; i < additionalRoll.number; i++) {
@@ -147,10 +169,10 @@ export class Ruins extends Component<Props, State> {
                     section.data.forEach((data: RuinsData) => {
                         if (data.roll.from <= roll && data.roll.to >= roll) {
                             if (data.info !== null) {
-                                result.detail.push(data.info);
+                                addDescriptions ? result.detail.push(`${section.description}: ${data.info}`) : result.detail.push(data.info);
                             }
                             if (data.additionalRoll !== null) {
-                                this.processSubRoll(result, data.additionalRoll);
+                                this.processSubRoll(result, data.additionalRoll, addDescriptions);
                             }
                         }
                     });

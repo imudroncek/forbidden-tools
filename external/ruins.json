@@ -835,7 +835,7 @@
     },
     {
         "id": 7,
-        "type": "MAIN",
+        "type": "SUB",
         "description": "Entrances to the building.",
         "dice": "D6",
         "data": [
@@ -883,7 +883,7 @@
     },
     {
         "id": 8,
-        "type": "MAIN",
+        "type": "SUB",
         "description": "Threats in the building.",
         "dice": "D6",
         "data": [
