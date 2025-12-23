@@ -1,4 +1,5 @@
 main image - https://freeleaguepublishing.com/wp-content/uploads/2023/09/Forbidden-Lands-cover-art_square.jpg
+christmas image - https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/christmas_1.jpeg
 theme color - #1C6A73
 background color - #A9D1C1
 terciary color - #FEDC97

@@ -27,6 +27,14 @@
 .title p {
     margin: 0px 0px 0px 0px;
     line-height: 0.8em;
+}
+
+.date-agnostic p {
     font-size: 4em;
+    text-align: start;
+}
+
+.date-specific p {
+    font-size: 1.75em;
     text-align: start;
 }
