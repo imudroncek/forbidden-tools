@@ -1,6 +1,6 @@
 import { useLocation } from 'preact-iso'
 import { useState } from 'preact/hooks';
-import { MdConstruction, MdChevronRight, MdChevronLeft, MdPublic, MdCastle } from 'react-icons/md'
+import { MdConstruction, MdChevronRight, MdChevronLeft, MdPublic, MdCastle, MdImage } from 'react-icons/md'
 
 import './Navigator.css'
 
@@ -18,6 +18,7 @@ export function Navigator() {
         <div>
             <div class={style}>
                 <button class={"navigator-button"}>bk</button>
+                <button class={"navigator-button"} onClick={() => location.route('/ft/background')}><MdImage/></button>
                 <button class={"navigator-button"} onClick={() => location.route('/ft/links')}><MdPublic/></button>
                 <button class={"navigator-button"} onClick={() => location.route('/ft/under-construction')}><MdConstruction/></button>
                 <button class={"navigator-button"} onClick={() => location.route('/ft/ruins')}><MdCastle/></button>
@@ -26,6 +27,7 @@ export function Navigator() {
             </div>
             <div class={"navigator navigator-large"}>
                 <button class={"navigator-button"}>bk</button>
+                <button class={"navigator-button"} onClick={() => location.route('/ft/background')}><MdImage/></button>
                 <button class={"navigator-button"} onClick={() => location.route('/ft/links')}><MdPublic/></button>
                 <button class={"navigator-button"} onClick={() => location.route('/ft/under-construction')}><MdConstruction/></button>
                 <button class={"navigator-button"} onClick={() => location.route('/ft/ruins')}><MdCastle/></button>
