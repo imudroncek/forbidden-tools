@@ -2,7 +2,7 @@ import './Ruins.css'
 
 import { MdCastle, MdClear, MdReplay } from 'react-icons/md'
 import { ProgressOverlay } from '../ProgressOverlay/ProgressOverlay';
-import { Component } from 'preact';
+import { Component, JSX } from 'preact';
 
 const DICE_TYPE = {
     D66: "D66",
@@ -153,7 +153,6 @@ export class Ruins extends Component<Props, State> {
                 this.processSubRoll(result, {number: 1, id: 8}, true);
                 results.push(result);
             }
-            console.log(results);
         }
     }
 
@@ -224,6 +223,18 @@ export class Ruins extends Component<Props, State> {
         return out;
     }
 
+    private getResults(): JSX.Element[] {
+        let out: JSX.Element[] = [];
+        for (let i = 0; i < this.state.result.length; i++) {
+            out.push(
+                    <div class={"result"}>
+                        {this.getDetail(this.state.result[i])}
+                    </div>
+            );
+        }
+        return out;
+    }
+
     render() {
         return (
             <div class={"ruins bellefair-regular"}>
@@ -239,27 +250,7 @@ export class Ruins extends Component<Props, State> {
                         <button class={"toolbar-button"}>bk</button>
                     </div>
                     <div class={"large-spacer"} />
-                    <div class={"result"}>
-                        {this.getDetail(this.state.result[0])}
-                    </div>
-                    <div class={"result"}>
-                        {this.getDetail(this.state.result[1])}
-                    </div>
-                    <div class={"result"}>
-                        {this.getDetail(this.state.result[2])}
-                    </div>
-                    <div class={"result"}>
-                        {this.getDetail(this.state.result[3])}
-                    </div>
-                    <div class={"result"}>
-                        {this.getDetail(this.state.result[4])}
-                    </div>
-                    <div class={"result"}>
-                        {this.getDetail(this.state.result[5])}
-                    </div>
-                    <div class={"result"}>
-                        {this.getDetail(this.state.result[6])}
-                    </div>
+                    {this.getResults()}
                     <div class={"large-spacer"} />
                 </div>
             </div>
