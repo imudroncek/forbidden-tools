@@ -1,17 +1,11 @@
 import './Home.css';
-import { isChristmas } from '../../common/common';
+import { getDateSpecificMessage } from '../../common/common';
 
 export function Home() {
-  const getDateSpecificMessage = () => {
-    if (isChristmas()) {
-      return "Christmas Edition";
-    }
 
-    return "";
-  }
 
   return (
-    <div class={"home rakkas-regular"}>
+    <div class={"home background-blur rakkas-regular"}>
       <div class={"title"}>
         <div class={"date-agnostic"}>
             <p>Forbidden</p>

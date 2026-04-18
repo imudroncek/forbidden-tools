@@ -4,7 +4,7 @@ import './UnderConstruction.css'
 
 export function UnderConstruction() {
   return (
-    <div class={"construction bellefair-regular"}>
+    <div class={"construction background-blur bellefair-regular"}>
       <div class={"text"}>
         <h1><MdConstruction/></h1>
         <p>Under Construction</p>

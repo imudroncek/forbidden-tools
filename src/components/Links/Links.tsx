@@ -4,7 +4,7 @@ import './Links.css'
 
 export function Links() {
   return (
-    <div class={"links bellefair-regular"}>
+    <div class={"links background-blur bellefair-regular"}>
       <div class={"text"}>
         <h1><MdPublic/></h1>
         <div class={"external"}><a href={"https://freeleaguepublishing.com/shop/forbidden-lands/"}>Buy Forbidden Lands TTRPG </a><MdOpenInNew/></div>

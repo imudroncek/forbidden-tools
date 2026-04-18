@@ -237,7 +237,7 @@ export class Ruins extends Component<Props, State> {
 
     render() {
         return (
-            <div class={"ruins bellefair-regular"}>
+            <div class={"ruins background-blur bellefair-regular"}>
                 <ProgressOverlay visible={this.state.overlay} />
                 <div hidden={this.state.result.length > 0} class={"text"}>
                     <h1><MdCastle/></h1>

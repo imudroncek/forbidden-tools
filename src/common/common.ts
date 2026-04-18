@@ -94,3 +94,27 @@ export const getDateSpecificBackground = () => {
 
     return Holiday.DEFAULT;
 }
+
+export const getDateSpecificMessage = () => {
+    if (isChristmas()) {
+        return "Christmas Edition";
+    }
+
+    if (isEaster()) {
+        return "Easter Edition";
+    }
+
+    if (isValentines()) {
+        return "Valentine's Day Edition";
+    }
+
+    if (isHalloween()) {
+        return Math.random() > 0.8 ? "Spooky Edition" : "Halloween Edition";
+    }
+
+    if (isDoom()) {
+        return "Happy Birthday to DOOM!";
+    }
+
+    return "";
+}
