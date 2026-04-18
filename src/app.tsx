@@ -5,7 +5,6 @@ import { Links } from './components/Links/Links';
 import { Navigator } from './components/Navigator/Navigator';
 import { Ruins } from './components/Ruins/Ruins';
 import { Background } from './components/Background/Background';
-import { getDateSpecificBackground } from './common/common';
 
 import './app.css'
 
@@ -24,9 +23,7 @@ export function App() {
             </Router>
           </ErrorBoundary>
         </LocationProvider> 
-        <div class={"background-container"}>
-          <div class={`background background-${getDateSpecificBackground()}`}></div>
-        </div>
+        <Background />
       </div>
   )
 }
