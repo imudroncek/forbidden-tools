@@ -23,10 +23,30 @@
   height: 100%;
 }
 
+.background-blur {
+    backdrop-filter: blur(15px);
+}
+
 .background-default {
   background-image: url(https://freeleaguepublishing.com/wp-content/uploads/2023/09/Forbidden-Lands-cover-art_square.jpg);
 }
 
 .background-christmas {
-  background-image: url(https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/christmas_1.jpeg);
+  background-image: url(https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/christmas.jpeg);
+}
+
+.background-doom {
+  background-image: url(https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/doom.jpg);
+}
+
+.background-easter {
+  background-image: url(https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/easter.jpg);
+}
+
+.background-halloween {
+  background-image: url(https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/halloween.jpg);
+}
+
+.background-valentines {
+  background-image: url(https://raw.githubusercontent.com/imudroncek/forbidden-tools/refs/heads/master/external/valentines.png);
 }
