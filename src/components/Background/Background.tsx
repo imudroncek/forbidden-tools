@@ -1,4 +1,4 @@
-import { getDateSpecificBackground, Holiday } from '../../common/common';
+import { getDateSpecificObject, Holiday } from '../../common/common';
 import { Component } from 'preact';
 import './Background.css';
 
@@ -12,7 +12,7 @@ export class Background extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = {
-            background: getDateSpecificBackground()
+            background: getDateSpecificObject().holiday
         };
     }
 

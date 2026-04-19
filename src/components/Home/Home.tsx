@@ -1,5 +1,5 @@
 import './Home.css';
-import { getDateSpecificMessage } from '../../common/common';
+import { getDateSpecificObject } from '../../common/common';
 
 export function Home() {
 
@@ -12,7 +12,7 @@ export function Home() {
             <p>Tools</p>
         </div>
         <div class={"date-specific"}>
-          <p>{getDateSpecificMessage()}</p>
+          <p>{getDateSpecificObject().message}</p>
         </div>
       </div>
     </div>
