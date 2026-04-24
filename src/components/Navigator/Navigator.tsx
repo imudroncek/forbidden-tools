@@ -63,8 +63,10 @@ export class Navigator extends Component<Props, State> {
 
     navigateTo(path: string) {
         const location = this.context;
-        this.removeChildren();
-        location.route(path);
+        if (path !== location.path) {
+            this.removeChildren();
+            location.route(path);
+        }
     }
 
     getNavigator() {

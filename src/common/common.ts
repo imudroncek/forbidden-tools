@@ -135,66 +135,94 @@ const getEncodedDate = (day: number, month: number) => {
     return (month * 100) + day;
 }
 
-export enum Holiday {
-    CHRISTMAS = "christmas",
-    EASTER = "easter",
-    VALENTINES = "valentines",
-    HALLOWEEN = "halloween",
-    DOOM = "doom",
-    MAY4 = "may4",
-    DEFAULT = "default"
+export interface DateSpecificObject {
+    holiday: string;
+    message: string;
 }
 
-export interface DateSpecificObject {
-    holiday: Holiday;
-    message: string;
+const Holiday = {
+        CHRISTMAS: { 
+            holiday: "christmas",
+            message: "Christmas Edition"
+        },
+        EASTER: { 
+            holiday: "easter",
+            message: "Easter Edition"
+        },
+        VALENTINES: { 
+            holiday: "valentines",
+            message: "Valentine's Day Edition"
+        },
+        HALLOWEEN: { 
+            holiday: "halloween",
+            message: Math.random() > 0.8 ? "Spooky Edition" : "Halloween Edition"
+        },
+        DOOM: { 
+            holiday: "doom",
+            message: "Happy Birthday to DOOM!"
+        },
+        MAY4: { 
+            holiday: "may4",
+            message: "May the Force be with you!"
+        },
+        DEFAULT: { 
+            holiday: "default",
+            message: ""
+        }
+}
+
+export const getNextHoliday = (holiday: DateSpecificObject): DateSpecificObject => {
+    if (holiday === Holiday.CHRISTMAS) {
+        return Holiday.EASTER;
+    }
+    
+    if (holiday === Holiday.EASTER) {
+        return Holiday.VALENTINES;
+    }
+    
+    if (holiday === Holiday.VALENTINES) {
+        return Holiday.HALLOWEEN;
+    }
+    
+    if (holiday === Holiday.HALLOWEEN) {
+        return Holiday.DOOM;
+    }
+    
+    if (holiday === Holiday.DOOM) {
+        return Holiday.MAY4;
+    }
+    
+    if (holiday === Holiday.MAY4) {
+        return Holiday.DEFAULT;
+    }
+    
+    return Holiday.CHRISTMAS;
 }
 
 export const getDateSpecificObject = (): DateSpecificObject => {
     if (isChristmas()) {
-        return { 
-            holiday: Holiday.CHRISTMAS,
-            message: "Christmas Edition"
-        }
+        return Holiday.CHRISTMAS;
     }
 
     if (isEaster()) {
-        return { 
-            holiday: Holiday.EASTER,
-            message: "Easter Edition"
-        }
+        return Holiday.EASTER;
     }
 
     if (isValentines()) {
-        return { 
-            holiday: Holiday.VALENTINES,
-            message: "Valentine's Day Edition"
-        }
+        return Holiday.VALENTINES;
     }
 
     if (isHalloween()) {
-        return { 
-            holiday: Holiday.HALLOWEEN,
-            message: Math.random() > 0.8 ? "Spooky Edition" : "Halloween Edition"
-        }
+        return Holiday.HALLOWEEN;
     }
 
     if (isDoom()) {
-        return { 
-            holiday: Holiday.DOOM,
-            message: "Happy Birthday to DOOM!"
-        }
+        return Holiday.DOOM;
     }
 
     if (isMay4()) {
-        return { 
-            holiday: Holiday.MAY4,
-            message: "May the Force be with you!"
-        }
+        return Holiday.MAY4;
     }
 
-    return { 
-            holiday: Holiday.DEFAULT,
-            message: ""
-        }
+    return Holiday.DEFAULT;
 }

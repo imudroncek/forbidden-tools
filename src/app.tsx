@@ -8,30 +8,47 @@ import { Background } from './components/Background/Background';
 
 import './app.css'
 import { NavigatorContext } from './components/Navigator/Context/NavigatorContext';
-import { createRef } from 'preact';
+import { Component, createRef } from 'preact';
+import { BackgroundSwitcher } from './components/Background/Switcher/BackgroundSwitcher';
+import { DateSpecificObject, getDateSpecificObject } from './common/common';
 
 const smallRef = createRef<Navigator>();
 const largeRef = createRef<Navigator>();
 
-export function App() {
-	return (
-		<div class={"app"}>
-			<LocationProvider>
-				<Navigator size={NavigatorSize.SMALL} ref={smallRef} />
-				<Navigator size={NavigatorSize.LARGE} ref={largeRef} />
-				<NavigatorContext.Provider value={{small: smallRef, large: largeRef}}>
-					<ErrorBoundary>
-					<Router>
-						<Route path='/ft/' component={Home} />
-						<Route path='/ft/ruins' component={Ruins} />
-						<Route path='/ft/under-construction' component={UnderConstruction} />
-						<Route path='/ft/links' component={Links} />
-						<Route path='/ft/background' component={Background} />
-					</Router>
-					</ErrorBoundary>
-				</NavigatorContext.Provider>
-			</LocationProvider> 
-			<Background />
-		</div>
-	)
+interface Props {}
+
+interface State {
+	background: DateSpecificObject;
+}
+
+export class App extends Component<Props, State> {
+	constructor(props: Props) {
+		super(props);
+		this.state = {
+			background: getDateSpecificObject()
+		}
+	}
+
+	render() {
+		return (
+			<div class={"app"}>
+				<LocationProvider>
+					<Navigator size={NavigatorSize.SMALL} ref={smallRef} />
+					<Navigator size={NavigatorSize.LARGE} ref={largeRef} />
+					<NavigatorContext.Provider value={{small: smallRef, large: largeRef}}>
+						<ErrorBoundary>
+						<Router>
+							<Route path='/ft/' component={Home} message={this.state.background.message}/>
+							<Route path='/ft/ruins' component={Ruins} />
+							<Route path='/ft/under-construction' component={UnderConstruction} />
+							<Route path='/ft/links' component={Links} />
+							<Route path='/ft/background' component={BackgroundSwitcher} switchBackground={(nextHoliday) => this.setState({background: nextHoliday})} />
+						</Router>
+						</ErrorBoundary>
+					</NavigatorContext.Provider>
+				</LocationProvider> 
+				<Background image={this.state.background.holiday} />
+			</div>
+		)
+	}
 }

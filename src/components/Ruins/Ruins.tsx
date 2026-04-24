@@ -2,7 +2,7 @@ import './Ruins.css'
 
 import { MdCastle, MdClear, MdReplay } from 'react-icons/md'
 import { ProgressOverlay } from '../ProgressOverlay/ProgressOverlay';
-import { Component, Context, JSX, RefObject, VNode } from 'preact';
+import { Component, JSX } from 'preact';
 import { NavigatorContext } from '../Navigator/Context/NavigatorContext';
 import { Navigator } from '../Navigator/Navigator';
 import { NavigatorButton, NavigatorButtonSize } from '../Navigator/Button/NavigatorButton';
@@ -269,7 +269,7 @@ export class Ruins extends Component<Props, State> {
         return out;
     }
 
-    render() {console.log(this.context);
+    render() {
         return (
             <div class={"ruins background-blur bellefair-regular"}>
                 <ProgressOverlay visible={this.state.overlay} />
