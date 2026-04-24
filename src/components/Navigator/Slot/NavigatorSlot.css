@@ -1,0 +1,28 @@
+.separator {
+    background-color: #282828;
+    position: relative;
+}
+
+.separator-small {
+    width: 40%;
+    height: 1px;
+    left: 5%;
+}
+
+.separator-large {
+    height: 40%;
+    width: 1px;
+    top: 55%;
+}
+
+.slot {
+    display: flex;
+}
+
+.slot-small {
+    flex-direction: column;
+}
+
+.slot-large {
+    flex-direction: row;
+}

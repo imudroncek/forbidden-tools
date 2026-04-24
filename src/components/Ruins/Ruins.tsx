@@ -3,6 +3,9 @@ import './Ruins.css'
 import { MdCastle, MdClear, MdReplay } from 'react-icons/md'
 import { ProgressOverlay } from '../ProgressOverlay/ProgressOverlay';
 import { Component, JSX } from 'preact';
+import { NavigatorContext } from '../Navigator/Context/NavigatorContext';
+import { Navigator } from '../Navigator/Navigator';
+import { NavigatorButton, NavigatorButtonSize } from '../Navigator/Button/NavigatorButton';
 
 const DICE_TYPE = {
     D66: "D66",
@@ -61,6 +64,8 @@ export class Ruins extends Component<Props, State> {
         }
     }
 
+    static contextType = NavigatorContext;
+
     async componentDidMount(): Promise<void> {
         this.setState({fetching: true});
         try {
@@ -75,6 +80,32 @@ export class Ruins extends Component<Props, State> {
 
     delay(ms: number) {
         return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
+    discardRuin() {
+        this.setState({result: []});
+        this.removeExtraButtons();
+    }
+
+    removeExtraButtons() {
+        const smallNavigator: Navigator = this.context.small.current;
+        const largeNavigator: Navigator = this.context.large.current;
+        smallNavigator?.removeChildren();
+        largeNavigator?.removeChildren();
+    }
+
+    addExtraButtons() {
+        const smallNavigator: Navigator = this.context.small.current;
+        const largeNavigator: Navigator = this.context.large.current;
+        smallNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.SMALL} onClick={() => this.discardRuin()}><MdClear/></NavigatorButton>);
+        smallNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.SMALL} onClick={() => this.reGenerateRuin()}><MdReplay/></NavigatorButton>);
+        largeNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.reGenerateRuin()}><MdReplay/></NavigatorButton>);
+        largeNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.discardRuin()}><MdClear/></NavigatorButton>);
+    }
+
+    async reGenerateRuin() {
+        this.removeExtraButtons();
+        await this.generateRuin();
     }
 
     async generateRuin() {
@@ -100,6 +131,9 @@ export class Ruins extends Component<Props, State> {
         } finally {
             await this.delay(5000);
             this.setState({overlay: false});
+            if (this.state.result.length > 0) {
+                this.addExtraButtons();
+            }
         }
     }
 
@@ -244,11 +278,6 @@ export class Ruins extends Component<Props, State> {
                     <button class={"generate-button bellefair-regular"} onClick={() => this.generateRuin()}>Generate Ruin</button>
                 </div>
                 <div hidden={this.state.result.length === 0 || this.state.overlay} class={"scrollable"}>
-                    <div hidden={this.state.overlay} class={"toolbar"}>
-                        <button class={"toolbar-button"} onClick={() => this.setState({result: []})}><MdClear/></button>
-                        <button class={"toolbar-button"} onClick={() => this.generateRuin()}><MdReplay/></button>
-                        <button class={"toolbar-button"}>bk</button>
-                    </div>
                     <div class={"large-spacer"} />
                     {this.getResults()}
                     <div class={"large-spacer"} />
