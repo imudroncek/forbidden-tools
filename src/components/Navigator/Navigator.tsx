@@ -71,8 +71,8 @@ export class Navigator extends Component<Props, State> {
         if (this.props.size === NavigatorSize.SMALL) {
             return (
                 <div class={this.state.style} >
-                    <NavigatorSlot type={NavigatorSlotType.EXTRA} ref={this.extraRef} />
-                    <NavigatorSlot type={NavigatorSlotType.MAIN} ref={this.mainRef} >
+                    <NavigatorSlot size={NavigatorButtonSize.SMALL} type={NavigatorSlotType.EXTRA} ref={this.extraRef} />
+                    <NavigatorSlot size={NavigatorButtonSize.SMALL} type={NavigatorSlotType.MAIN} ref={this.mainRef} >
                         <NavigatorButton ref={this.collapseButton} hidden={!this.state.extended} size={NavigatorButtonSize.SMALL} onClick={() => this.arrowClicked()}><MdOutlineKeyboardArrowDown/></NavigatorButton>
                         <NavigatorButton ref={this.extendButton} hidden={this.state.extended} size={NavigatorButtonSize.SMALL} onClick={() => this.arrowClicked()}><MdOutlineKeyboardArrowUp/></NavigatorButton>
                         <NavigatorButton size={NavigatorButtonSize.SMALL} onClick={() => this.navigateTo('/ft/ruins')}><MdCastle/></NavigatorButton>
@@ -86,14 +86,14 @@ export class Navigator extends Component<Props, State> {
         } else {
             return (
                 <div class={"navigator navigator-large"}>
-                    <NavigatorSlot type={NavigatorSlotType.MAIN} ref={this.mainRef} >
+                    <NavigatorSlot size={NavigatorButtonSize.LARGE} type={NavigatorSlotType.MAIN} ref={this.mainRef} >
                         <NavigatorButton size={NavigatorButtonSize.LARGE}>bk</NavigatorButton>
                         <NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.navigateTo('/ft/background')}><MdImage/></NavigatorButton>
                         <NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.navigateTo('/ft/links')}><MdPublic/></NavigatorButton>
                         <NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.navigateTo('/ft/under-construction')}><MdConstruction/></NavigatorButton>
                         <NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.navigateTo('/ft/ruins')}><MdCastle/></NavigatorButton>
                     </NavigatorSlot>
-                    <NavigatorSlot type={NavigatorSlotType.EXTRA} ref={this.extraRef} />
+                    <NavigatorSlot size={NavigatorButtonSize.LARGE} type={NavigatorSlotType.EXTRA} ref={this.extraRef} />
                 </div>
             )
         }

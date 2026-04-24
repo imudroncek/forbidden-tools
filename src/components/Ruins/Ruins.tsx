@@ -99,8 +99,8 @@ export class Ruins extends Component<Props, State> {
         const largeNavigator: Navigator = this.context.large.current;
         smallNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.SMALL} onClick={() => this.discardRuin()}><MdClear/></NavigatorButton>);
         smallNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.SMALL} onClick={() => this.reGenerateRuin()}><MdReplay/></NavigatorButton>);
-        largeNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.discardRuin()}><MdClear/></NavigatorButton>);
         largeNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.reGenerateRuin()}><MdReplay/></NavigatorButton>);
+        largeNavigator?.addChild(<NavigatorButton size={NavigatorButtonSize.LARGE} onClick={() => this.discardRuin()}><MdClear/></NavigatorButton>);
     }
 
     async reGenerateRuin() {

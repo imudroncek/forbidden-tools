@@ -1,9 +1,10 @@
 import { Component, VNode } from 'preact';
-import { NavigatorButton } from '../Button/NavigatorButton';
+import { NavigatorButton, NavigatorButtonSize } from '../Button/NavigatorButton';
 
 import './NavigatorSlot.css'
 
 interface Props {
+    size: NavigatorButtonSize;
     type: NavigatorSlotType;
     children?: VNode<NavigatorButton>[];
 }
@@ -25,9 +26,9 @@ export class NavigatorSlot extends Component<Props, State> {
         }
     }
 
-    getSeparator(){
-        if (this.props.type === NavigatorSlotType.EXTRA && this.state.children.length > 0) {
-            return (<div class={"separator"}></div>);
+    getSeparator(hide: boolean){
+        if (!hide && this.props.type === NavigatorSlotType.EXTRA && this.state.children.length > 0) {
+            return (<div class={`separator separator-${this.props.size === NavigatorButtonSize.SMALL ? 'small' : 'large'}`}></div>);
         }
     } 
 
@@ -52,15 +53,16 @@ export class NavigatorSlot extends Component<Props, State> {
     render() {
         if (this.props.type === NavigatorSlotType.MAIN) {
             return (
-                <div>
+                <div class={`slot slot-${this.props.size == NavigatorButtonSize.SMALL ? 'small' : 'large'}`}>
                     {this.state.children}
                 </div>
             )
         } else {
             return (
-                <div>
+                <div class={`slot slot-${this.props.size == NavigatorButtonSize.SMALL ? 'small' : 'large'}`}>
+                    {this.getSeparator(this.props.size == NavigatorButtonSize.SMALL)}
                     {this.state.children}
-                    {this.getSeparator()}
+                    {this.getSeparator(this.props.size == NavigatorButtonSize.LARGE)}
                 </div>
             )
         }
