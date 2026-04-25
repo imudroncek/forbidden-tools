@@ -1,9 +1,15 @@
 import { VitePWA } from 'vite-plugin-pwa';
-import { defineConfig } from 'vite'
-import preact from '@preact/preset-vite'
+import { defineConfig } from 'vite';
+import preact from '@preact/preset-vite';
+import packageJson from './package.json';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  define: {
+    // Injects the version as a global variable.
+    // JSON.stringify is required so it outputs as a string literal: '"1.0.0"'
+    '__APP_VERSION__': JSON.stringify(packageJson.version),
+  },
   plugins: [preact(), VitePWA({
     registerType: 'autoUpdate',
     injectRegister: false,
